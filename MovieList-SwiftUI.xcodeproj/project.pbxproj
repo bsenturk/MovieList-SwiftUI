@@ -19,6 +19,7 @@
 		FA2F170E23C5CD6600BC509C /* MovieListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F170D23C5CD6600BC509C /* MovieListRequest.swift */; };
 		FA2F171123C600B500BC509C /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F171023C600B500BC509C /* MovieResponse.swift */; };
 		FA2F171523C705FD00BC509C /* MovieListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F171423C705FD00BC509C /* MovieListRow.swift */; };
+		FA2F171A23C75FA600BC509C /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F171923C75FA600BC509C /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FA2F170D23C5CD6600BC509C /* MovieListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRequest.swift; sourceTree = "<group>"; };
 		FA2F171023C600B500BC509C /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		FA2F171423C705FD00BC509C /* MovieListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListRow.swift; sourceTree = "<group>"; };
+		FA2F171923C75FA600BC509C /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		FA2F171623C755EF00BC509C /* MovieDetail */ = {
 			isa = PBXGroup;
 			children = (
+				FA2F171923C75FA600BC509C /* MovieDetailView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2F171A23C75FA600BC509C /* MovieDetailView.swift in Sources */,
 				FA2F16F023C5BC0E00BC509C /* AppDelegate.swift in Sources */,
 				FA2F171523C705FD00BC509C /* MovieListRow.swift in Sources */,
 				FA2F170723C5BC7000BC509C /* MovieListView.swift in Sources */,
