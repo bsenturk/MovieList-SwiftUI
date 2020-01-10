@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FA2F16F023C5BC0E00BC509C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F16EF23C5BC0E00BC509C /* AppDelegate.swift */; };
 		FA2F16F223C5BC0E00BC509C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F16F123C5BC0E00BC509C /* SceneDelegate.swift */; };
-		FA2F16F423C5BC0E00BC509C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2F16F323C5BC0E00BC509C /* ContentView.swift */; };
 		FA2F16F623C5BC1400BC509C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2F16F523C5BC1400BC509C /* Assets.xcassets */; };
 		FA2F16F923C5BC1400BC509C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2F16F823C5BC1400BC509C /* Preview Assets.xcassets */; };
 		FA2F16FC23C5BC1400BC509C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2F16FA23C5BC1400BC509C /* LaunchScreen.storyboard */; };
@@ -26,7 +25,6 @@
 		FA2F16EC23C5BC0E00BC509C /* MovieList-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieList-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2F16EF23C5BC0E00BC509C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2F16F123C5BC0E00BC509C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA2F16F323C5BC0E00BC509C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA2F16F523C5BC1400BC509C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2F16F823C5BC1400BC509C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA2F16FB23C5BC1400BC509C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				FA2F170F23C6009B00BC509C /* Model */,
 				FA2F170523C5BC4500BC509C /* MovieList */,
 				FA2F171623C755EF00BC509C /* MovieDetail */,
-				FA2F16F323C5BC0E00BC509C /* ContentView.swift */,
 				FA2F16F523C5BC1400BC509C /* Assets.xcassets */,
 				FA2F16FA23C5BC1400BC509C /* LaunchScreen.storyboard */,
 				FA2F16FD23C5BC1400BC509C /* Info.plist */,
@@ -237,7 +234,6 @@
 				FA2F170723C5BC7000BC509C /* MovieListView.swift in Sources */,
 				FA2F170B23C5BE9E00BC509C /* Network.swift in Sources */,
 				FA2F16F223C5BC0E00BC509C /* SceneDelegate.swift in Sources */,
-				FA2F16F423C5BC0E00BC509C /* ContentView.swift in Sources */,
 				FA2F171123C600B500BC509C /* MovieResponse.swift in Sources */,
 				FA2F170923C5BCA200BC509C /* MovieListViewModel.swift in Sources */,
 				FA2F170E23C5CD6600BC509C /* MovieListRequest.swift in Sources */,

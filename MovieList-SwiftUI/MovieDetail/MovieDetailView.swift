@@ -9,23 +9,27 @@
 import SwiftUI
 
 struct MovieDetailView: View {
+    let movie: Movie
     var body: some View {
-        VStack {
-            Image("")
-            .resizable()
-                .frame(width: UIScreen.main.bounds.size.width,
-                       height: 300)
-                .background(Color.red)
-
-            Text("Movie Overview")
-            Spacer()
-        }
-
+            VStack {
+                Image("")
+                    .resizable()
+                    .frame(width: UIScreen.main.bounds.size.width,
+                           height: 300)
+                    .background(Color.red)
+                Text(movie.overview)
+                Spacer()
+            }
+            .navigationBarTitle(Text(movie.title),
+                                displayMode: .inline)
     }
 }
 
 struct MovieDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailView()
+        MovieDetailView(movie: Movie(id: 0,
+                                     imagePath: "",
+                                     title: "",
+                                     overview: ""))
     }
 }

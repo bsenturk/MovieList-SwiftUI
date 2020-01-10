@@ -17,7 +17,7 @@ final class MovieListViewModel: ObservableObject {
 
     private let responseSubject = PassthroughSubject<MovieResponse, Never>()
 
-    private var cancallables: [AnyCancellable] = []
+    private var cancellables: [AnyCancellable] = []
 
     init(networkService: Network = Network()) {
         self.networkService = networkService
@@ -43,7 +43,7 @@ final class MovieListViewModel: ObservableObject {
             self.movies = value.results
         })
         
-        cancallables = [subscriber]
+        cancellables = [subscriber]
 
     }
 }
