@@ -390,6 +390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieList-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AZPUYY7BA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MovieList-SwiftUI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -409,6 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieList-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AZPUYY7BA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "MovieList-SwiftUI/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -12,14 +12,14 @@ struct MovieListView: View {
     @ObservedObject var viewModel: MovieListViewModel
     var body: some View {
         NavigationView {
-                List(viewModel.movies) { movie in
-                    NavigationLink(destination: MovieDetailView(movie: movie,
-                                                                imageLoader: ImageLoader(url: "\(Constants.URL.baseImageUrl)\(movie.imagePath)"))) {
-                                                                    MovieListRow(movie: movie,
-                                                                                 imageLoader: ImageLoader(url: "\(Constants.URL.baseImageUrl)\(movie.imagePath)"))
-                    }
+            List(viewModel.movies) { movie in
+                NavigationLink(destination: MovieDetailView(movie: movie,
+                                                            imageLoader: ImageLoader(url: "\(Constants.URL.baseImageUrl)\(movie.imagePath)"))) {
+                                                                MovieListRow(movie: movie,
+                                                                             imageLoader: ImageLoader(url: "\(Constants.URL.baseImageUrl)\(movie.imagePath)"))
                 }
-                .navigationBarTitle("Movies")
+            }
+            .navigationBarTitle("Movies")
         }
         .onAppear { UITableView.appearance().separatorStyle = .none }
     }

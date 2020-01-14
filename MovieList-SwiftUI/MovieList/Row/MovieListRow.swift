@@ -14,31 +14,16 @@ struct MovieListRow: View {
 
     var body: some View {
         HStack {
-        VStack(spacing: 10) {
-            Image(uiImage: UIImage(data: imageLoader.data) ?? UIImage())
-            .resizable()
-            .frame(width: 150, height: 250)
-                .background(Color.red)
-            Text(movie.title)
-            .lineLimit(2)
-            }
-
-            Spacer()
-
             VStack(spacing: 10) {
                 Image(uiImage: UIImage(data: imageLoader.data) ?? UIImage())
-                .resizable()
-                .frame(width: 150, height: 250)
+                    .resizable()
+                    .frame(width: 150, height: 250)
                     .background(Color.red)
                 Text(movie.title)
-                .lineLimit(2)
+                    .lineLimit(2)
             }
-
-
-            }.padding(EdgeInsets(top: 0,
-                                 leading: 10,
-                                 bottom: 0,
-                                 trailing: 10))
+            .frame(width: 150)
+        }
     }
 }
 
