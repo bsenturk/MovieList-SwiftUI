@@ -10,10 +10,12 @@ import SwiftUI
 
 struct MovieListRow: View {
     @State var movie: Movie
+    @ObservedObject var imageLoader: ImageLoader
+
     var body: some View {
         HStack {
         VStack(spacing: 10) {
-            Image("")
+            Image(uiImage: UIImage(data: imageLoader.data) ?? UIImage())
             .resizable()
             .frame(width: 150, height: 250)
                 .background(Color.red)
@@ -24,7 +26,7 @@ struct MovieListRow: View {
             Spacer()
 
             VStack(spacing: 10) {
-                Image("")
+                Image(uiImage: UIImage(data: imageLoader.data) ?? UIImage())
                 .resizable()
                 .frame(width: 150, height: 250)
                     .background(Color.red)
@@ -43,8 +45,9 @@ struct MovieListRow: View {
 struct MovieListRow_Previews: PreviewProvider {
     static var previews: some View {
         MovieListRow(movie: Movie(id: 1,
-                                  imagePath: nil,
+                                  imagePath: "",
                                   title: "",
-                                  overview: ""))
+                                  overview: ""),
+                     imageLoader: ImageLoader(url: ""))
     }
 }

@@ -59,7 +59,6 @@ final class Network: NetworkServiceType{
         print("------------\(request)------------")
 
         let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
         return URLSession.shared.dataTaskPublisher(for: request)
             .map{ $0.data }
             .mapError { error in return error }

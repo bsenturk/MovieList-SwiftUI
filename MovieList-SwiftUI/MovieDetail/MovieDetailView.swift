@@ -10,9 +10,10 @@ import SwiftUI
 
 struct MovieDetailView: View {
     let movie: Movie
+    @ObservedObject var imageLoader: ImageLoader
     var body: some View {
             VStack {
-                Image("")
+                Image(uiImage: UIImage(data: imageLoader.data) ?? UIImage())
                     .resizable()
                     .frame(width: UIScreen.main.bounds.size.width - 40,
                            height: 300)
@@ -33,6 +34,7 @@ struct MovieDetailView_Previews: PreviewProvider {
         MovieDetailView(movie: Movie(id: 0,
                                      imagePath: "",
                                      title: "",
-                                     overview: ""))
+                                     overview: ""),
+                        imageLoader: ImageLoader(url: ""))
     }
 }

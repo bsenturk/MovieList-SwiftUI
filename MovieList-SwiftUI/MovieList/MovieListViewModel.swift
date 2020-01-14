@@ -13,11 +13,14 @@ final class MovieListViewModel: ObservableObject {
 
     @Published private(set) var movies: [Movie] = []
 
+    var counter: Int = 0
+
     private let networkService: Network
 
     private let responseSubject = PassthroughSubject<MovieResponse, Never>()
 
     private var cancellables: [AnyCancellable] = []
+
 
     init(networkService: Network = Network()) {
         self.networkService = networkService

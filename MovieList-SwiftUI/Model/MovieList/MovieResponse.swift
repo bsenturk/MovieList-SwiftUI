@@ -15,11 +15,11 @@ struct MovieResponse: Decodable {
 
 struct Movie: Decodable, Identifiable {
     var id: Int64
-    var imagePath: String?
+    var imagePath: String
     var title: String
     var overview: String
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case id
         case imagePath = "poster_path"
         case title
