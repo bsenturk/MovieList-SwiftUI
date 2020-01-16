@@ -11,7 +11,7 @@ import Foundation
 
 final class ImageLoader: ObservableObject {
 
-    @Published var data = Data()
+    @Published private(set) var data = Data()
 
     init(url: String) {
         load(url: url)
