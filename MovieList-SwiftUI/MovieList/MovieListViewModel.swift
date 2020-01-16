@@ -37,7 +37,8 @@ final class MovieListViewModel: ObservableObject {
 
     private func bindInputs() {
         let request = MovieListRequest()
-        let queryItem = URLQueryItem(name: "api_key", value: "1850fa39fd78d321b331d47c4f03a223")
+        let queryItem = URLQueryItem(name: "api_key",
+                                     value: "1850fa39fd78d321b331d47c4f03a223")
         request.queryItems?.append(queryItem)
 
         let responsePublisher = networkService.response(from: request)

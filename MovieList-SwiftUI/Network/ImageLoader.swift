@@ -11,13 +11,7 @@ import Foundation
 
 final class ImageLoader: ObservableObject {
 
-    let imageSubject = PassthroughSubject<Void, Never>()
-
-    var data = Data() {
-        didSet {
-            imageSubject.send(())
-        }
-    }
+    @Published var data = Data()
 
     init(url: String) {
         load(url: url)
