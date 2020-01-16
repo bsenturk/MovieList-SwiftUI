@@ -20,7 +20,7 @@ struct MovieListRow: View {
                     .frame(width: 150, height: 250)
                     .background(Color.red)
                 Text(movie.title)
-                    .lineLimit(2)
+                    .lineLimit(1)
             }
             .frame(width: 150)
         }

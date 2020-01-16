@@ -8,10 +8,17 @@
 
 import Combine
 import Foundation
+import SwiftUI
 
 final class MovieListViewModel: ObservableObject {
 
-    @Published private(set) var movies: [Movie] = []
+    private var movies: [Movie] = [] {
+        didSet {
+            chunkArray()
+        }
+    }
+    @Published private(set) var firstChunkedMovies: [Movie] = []
+    @Published private(set) var secondChunkedMovies: [Movie] = []
 
     var counter: Int = 0
 
@@ -48,5 +55,15 @@ final class MovieListViewModel: ObservableObject {
         
         cancellables = [subscriber]
 
+    }
+
+    private func chunkArray() {
+        for (index, value) in movies.enumerated() {
+            if index % 2 == 0 {
+                firstChunkedMovies.append(value)
+            } else {
+                secondChunkedMovies.append(value)
+            }
+        }
     }
 }
